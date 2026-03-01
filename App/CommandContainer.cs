@@ -196,7 +196,7 @@ namespace ValSharp_Demo
 
             string? targetSubject = null;
 
-            if (!InGameCache.Instance.TryFindPlayer(playerQuery, out targetSubject, out bool hasMultipleAgents))
+            if (!InGameCache.Instance.TryFindPlayer(playerQuery, out targetSubject, out bool hasMultipleAgents) || targetSubject is null)
             {
                 string replyMessage = hasMultipleAgents ? "Birden fazla oyuncu bulundu! Karakter adının başına aynı takım için 1. karşı takım için 2. koyarak tekrar deneyin." : "Oyuncu bulunamadı!";
                 message.Reply(replyMessage);
