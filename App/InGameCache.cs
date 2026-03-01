@@ -91,18 +91,18 @@ namespace ValSharp_Demo
             hasMultipleAgents = false;
             targetSubject = null;
 
-            int teamIndex = -1;
+            //int teamIndex = -1;
 
-            var match = Regex.Match(playerQuery, @"^(?<index>\s*[12])\.?(?<query>[a-zA-Z]+)$");
-            if (match.Success)
-            {
-                try
-                {
-                    teamIndex = int.Parse(match.Groups["index"].Value);
-                    playerQuery = match.Groups["query"].Value;
-                }
-                catch { teamIndex = -1; }
-            }
+            //var match = Regex.Match(playerQuery, @"^(?<index>\s*[12])\.?(?<query>[a-zA-Z]+)$");
+            //if (match.Success)
+            //{
+            //    try
+            //    {
+            //        teamIndex = int.Parse(match.Groups["index"].Value);
+            //        playerQuery = match.Groups["query"].Value;
+            //    }
+            //    catch { teamIndex = -1; }
+            //}
 
             //todo teamIndex 
 

@@ -239,7 +239,7 @@ namespace ValSharp_Demo
 
         public class PlayerQueryDTO
         {
-            [Description("Oyuncunun kullanıcı adı veya ajan adı. " +
+            [Description("Oyuncunun kullanıcı adı ve ya ajan adı. " +
     "Kullanıcı adı mevcut değilse ve oyunda aynı ajandan birden fazla varsa (biri kendi takımınızda, biri rakip takımda), " +
     "ajan adının başına '1.' veya '2.' ön ekini koyun. 1. kendi takımınızda, 2. rakip takımda olduğu anlamına gelir.")]
             public required string PlayerQuery { get; set; }
