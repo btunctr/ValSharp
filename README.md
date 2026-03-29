@@ -203,7 +203,7 @@ Replies from commands will be sent after a short while after command execution i
 For XMPP Interceptor to work both game and RiotClient should be closed and for local auth to work game needs to be open, how will this work? In the entry point `Main` method its checked whether game or client is open or not. If so It'll ask the user to kill it. When user approves game is automaticly launched with correct configuration to make XMPP Interceptor to work. (Manualy launching will not work unless you give the right starting parameters) After game is launched app will wait for the game to start and will try to get authenticated. After authentication it'll be ready to use.
 
 ### Notes
-- Im aware that I should not call reflection methods every call but this is just a fun demo project so I'm not planning on doing much optimizations on this.
+- Im aware that I should not call reflection methods every call but this is just a fun demo project so I'm not planning on doing much optimizations on this. (Also it makes debugging and adding new things easier due to hot reload)
 
 - Code is a bit dirty. As I mentioned at the start its an old project and I combined old code with new code. I did not refactord old code.
 
