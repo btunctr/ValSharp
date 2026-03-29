@@ -102,7 +102,7 @@ From (Sender) should look like this;
 00000000-0000-0000-0000-000000000000-blue@ares-coregame.eu2.pvp.net/00000000-0000-0000-0000-000000000000
 ```
 
-First part is same as destination formate for normal messages. After `/` is the puuid of the player that sent the message. In our case because we want to send message to ourselves puuid should be our own. You can get your own puuid from `ValClient.Auth.Subject`
+First part is same as destination format for normal messages. After `/` is the puuid of the player that sent the message. In our case because we want to send message to ourselves puuid should be our own. You can get your own puuid from `ValClient.Auth.Subject`
 
 ##  ValSharp-Demo
 ValSharp-Demo is a functional demo app. It has a Command & Middleware architecture. It has commands that you can call from the game chat and also it has AI support (DeepSeek) for messages. Beware that this is not a finished software this is just a demo for a proof of concept wrapper. To use it you need to download the source and compile yourself. You can put your DeepSeek API key in api-key.txt file at your execution directory. If you want to use another model or add more functionality you need to code those yourself.
